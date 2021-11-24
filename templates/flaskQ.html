@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <ul>
+    {% for x in lis %}
+        <li>{{ x }}</li>
+    {% endfor %}
+    </ul>
+    <hr>
+
+    <p class="a">{{ "nickname: %s age: %s address: %s" % (dictionary["nickname"], dictionary["age"], dictionary["address"]) }}</p>
+    <hr>
+
+    {% if flag %}
+        <p>トゥルー</p>
+    {% else %}
+        <p>フォルス</p>
+    {% endif %}
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p>{{ s }}</p>
+    <hr>
+
+    <ul>
+    {% for x in lis %}
+        <li>{{ x }}</li>
+    {% endfor %}
+    </ul>
+    <hr>
+
+    <p>{{ "name: %s age: %s" % (dictionary["name"], dictionary["age"]) }}</p>
+    <hr>
+
+    {% if flag %}
+        <p>True</p>
+    {% else %}
+        <p>False</p>
+    {% endif %}
+
+</body>
+</html>
