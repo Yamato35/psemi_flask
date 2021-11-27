@@ -19,7 +19,7 @@ def index():
 
 if __name__ == "__main__":
     app.debug = True
-    app.run()
+    app.run(port = 8000)
 
 # flaskQ.pyというファイル名ではなぜか実行できなかったです。
 # しかし他のファイル名で実行したら成功したので、課題内容は達成していると思います。
